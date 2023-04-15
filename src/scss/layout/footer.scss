@@ -16,7 +16,7 @@
 		font-family: Montserrat;
 		font-size: 13px;
 		font-weight: 400;
-		line-height:1.1;
+		line-height: 1.1;
 		letter-spacing: 0em;
 	}
 }
@@ -47,8 +47,63 @@
 		align-items: center;
 		column-gap: 13px;
 	}
-  &__link{
-    @include hoverText($hoverColor);
-    @include svgHover($hoverColor);
-  }
+	&__link {
+		@include hoverText($hoverColor);
+		@include svgHover($hoverColor);
+	}
+}
+@media (max-width: 1230px) {
+	.footer__content {
+		flex-wrap: wrap;
+		max-width: 633px;
+		margin: 0 auto;
+		row-gap: 73px;
+	}
+	.footer__images {
+		display: block;
+		width: 100%;
+	}
+	.footer-column__link {
+		font-size: 12px;
+	}
+	.footer-column_rap {
+		row-gap: 21px;
+	}
+	.footer-column_mt .footer-column__item {
+		margin-top: 12px;
+	}
+	.footer-column__item {
+		font-size: 12px;
+	}
+	.footer-column__name {
+		font-size: 15px;
+		margin-bottom: 7px;
+	}
+	.footer__copy {
+		max-width: 685px;
+		margin: 0 auto;
+		margin-top: 139px;
+	}
+	.footer {
+		padding-bottom: 94px;
+	}
+}
+@media (max-width: 767px) {
+	.footer-column{
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-column__link{
+		text-align: center;
+	}
+	.footer__copy{
+		padding: 0 21px; 
+		font-size: 9px;
+	}
+	.footer{
+		padding-bottom: 159px;
+		padding-top: 53px;
+	}
 }

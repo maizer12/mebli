@@ -99,7 +99,7 @@
 
 .icon-menu {
 	display: none;
-	@include media(768) {
+	@include media(767) {
 		display: block;
 		position: relative;
 		width: rem(35);
@@ -193,7 +193,7 @@
 		max-width: 707px;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.header{
 		padding: 24px 0 46px;
 	}
