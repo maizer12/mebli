@@ -1,0 +1,150 @@
+.order {
+	max-width: 1180px;
+	padding: 0 15px;
+	margin: 0 auto;
+	padding-top: 106px;
+	padding-bottom: 114px;
+	&__title {
+		margin-bottom: 119px;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 21px;
+		max-width: 1000px;
+		margin-bottom: 81px;
+	}
+	&__link {
+		display: block;
+		background-color: #eaf6f8;
+		text-align: center;
+		padding: 19px;
+		max-width: 260px;
+		margin: 0 auto;
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		border-radius: 40px;
+		@include hoverButton();
+	}
+}
+.order-item {
+	padding: 0 24px;
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1180px;
+	overflow: hidden;
+	&__images-ibg {
+		height: 100px;
+		width: 82px;
+	}
+	&__left {
+		display: flex;
+		column-gap: 61px;
+		align-items: center;
+	}
+	&__links {
+		column-gap: 20px;
+		row-gap: 15px;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 320px;
+	}
+	&__link {
+		position: relative;
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #9a9a9a;
+		padding-bottom: 3px;
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			background-color: #9a9a9a;
+			transition: 0.4s;
+		}
+		&:hover {
+			&::after {
+				width: 0;
+			}
+		}
+	}
+	&__link_blue {
+		color: #0063ae;
+		&::after {
+			background-color: #0063ae;
+		}
+	}
+	&__sum {
+		display: flex;
+	}
+	&__input {
+		max-width: 51px;
+		text-align: center;
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 24px;
+		letter-spacing: 0em;
+		color: #000;
+	}
+	&__btn {
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1.4;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #000;
+		background-color: #eaf6f8;
+		width: 28px;
+		height: 28px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include hoverButton();
+	}
+	&__right {
+		display: flex;
+		column-gap: 73px;
+		align-items: center;
+		position: relative;
+		&::after {
+			content: '';
+			width: 1px;
+			height: 200px;
+			position: absolute;
+			right: 75px;
+			background-color: #bdbdbd;
+		}
+	}
+	&__price {
+		font-family: Inter;
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 1.4;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	&__remove {
+		@include svgHover(rgb(172, 13, 13));
+	}
+}

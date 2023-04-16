@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Замовлення'
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html', {})
+		<main class="order page">
+			<h1 class="order__title name-min">Замовлення</h1>
+			<ul class="order__items">
+				<li class="order-item">
+					<div class="order-item__left">
+						<div class="order-item__images-ibg">
+							<img src="./images/product.jpg" alt="order" class="order-item__img">
+						</div>
+						<div class="order-item__links">
+							<a href="#" class="order-item__link">Комод</a>
+							<a href="#" class="order-item__link order-item__link_blue">Дуб темний, молочний</a>
+							<a href="#" class="order-item__link">Термін доставки 5 днів</a>
+						</div>
+
+					</div>
+					<div class="order-item__sum">
+						<button class="order-item__btn">+</button>
+						<input type="number" class="order-item__input" value='1'>
+						<button class="order-item__btn">-</button>
+					</div>
+					<div class="order-item__right">
+						<h4 class="order-item__price">234грн</h4>
+						<button class="order-item__remove">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.9531 33.0491L23.0022 23M33.0513 12.9509L23.0003 23M23.0003 23L12.9531 12.9509M23.0022 23L33.0513 33.0491"
+									stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="order-item">
+					<div class="order-item__left">
+						<div class="order-item__images-ibg">
+							<img src="./images/product.jpg" alt="order" class="order-item__img">
+						</div>
+						<div class="order-item__links">
+							<a href="#" class="order-item__link">Комод</a>
+							<a href="#" class="order-item__link order-item__link_blue">Дуб темний, молочний</a>
+							<a href="#" class="order-item__link">Термін доставки 5 днів</a>
+						</div>
+
+					</div>
+					<div class="order-item__sum">
+						<button class="order-item__btn">+</button>
+						<input type="number" class="order-item__input" value='1'>
+						<button class="order-item__btn">-</button>
+					</div>
+					<div class="order-item__right">
+						<h4 class="order-item__price">234грн</h4>
+						<button class="order-item__remove">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.9531 33.0491L23.0022 23M33.0513 12.9509L23.0003 23M23.0003 23L12.9531 12.9509M23.0022 23L33.0513 33.0491"
+									stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</li>
+			</ul>
+			<div class="order__footer">
+				<p class="order__text text-item">Общо:</p>
+				<p class="order__text text-item">423грн</p>
+			</div>
+			<a href="#" class="order__link">Замовити</a>
+		</main>
+		@@include('html/footer.html', {})
+	</div>
+	@@include('html/script.html', {})
+</body>
+
+</html>
