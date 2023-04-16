@@ -6,14 +6,7 @@
 
 Если мы хотим добавить модуль следует его расскоментировать
 */
-import {
-  isWebp,
-  headerFixed,
-  togglePopupWindows,
-  addTouchClass,
-  addLoadedClass,
-  menuInit,
-} from './modules'
+import { isWebp, menuInit } from './modules'
 /* Раскомментировать для использования */
 // import { MousePRLX } from './libs/parallaxMouse'
 
@@ -38,7 +31,7 @@ isWebp()
 // addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
 /* Раскомментировать для использования */
- menuInit()
+menuInit()
 
 /* Библиотека для анимаций ===============================================================================
  *  документация: https://michalsnik.github.io/aos
@@ -65,3 +58,4 @@ isWebp()
 /* Раскомментировать для использования */
 // togglePopupWindows()
 // =======================================================================================================
+import './modules/accordion'
