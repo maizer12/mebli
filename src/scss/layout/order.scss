@@ -48,17 +48,13 @@
 		height: 100px;
 		width: 82px;
 	}
-	&__left {
-		display: flex;
-		column-gap: 61px;
-		align-items: center;
-	}
 	&__links {
 		column-gap: 20px;
 		row-gap: 15px;
 		display: flex;
 		flex-wrap: wrap;
 		max-width: 320px;
+		margin-left: -100px;
 	}
 	&__link {
 		position: relative;
@@ -146,5 +142,143 @@
 	}
 	&__remove {
 		@include svgHover(rgb(172, 13, 13));
+	}
+}
+@media (max-width: 1550px) {
+	.order__title {
+		margin-bottom: 90px;
+		font-size: 30px;
+	}
+	.order-item {
+		width: 896px;
+		padding: 0 18px;
+		&__links {
+			column-gap: 13px;
+			row-gap: 11px;
+			margin-left: 0px;
+		}
+		&__link {
+			font-size: 15px;
+		}
+		&__price {
+			font-size: 24px;
+		}
+	}
+	.order__footer {
+		margin-bottom: 61px;
+	}
+	.order__link {
+		font-size: 15px;
+		padding: 14px;
+		max-width: 197px;
+	}
+	.order-item__images-ibg {
+		height: 100%;
+		width: 62px;
+	}
+	.order__footer {
+		padding-right: 150px;
+	}
+}
+@media (max-width: 1230px) {
+	.order {
+		&__container {
+			max-width: 707px;
+		}
+	}
+	.order-item {
+		max-width: 100%;
+		&__left {
+			column-gap: 31px;
+		}
+		&__images-ibg {
+			width: 44px;
+			height: 54px;
+		}
+		&__links {
+			column-gap: 9px;
+			row-gap: 8px;
+			max-width: 174px;
+		}
+		&__input {
+			font-size: 10px;
+			height: 15px;
+		}
+		&__link {
+			font-size: 10px;
+		}
+		&__btn {
+			width: 15px;
+			height: 15px;
+			font-size: 10px;
+		}
+	}
+	.order__footer {
+		padding-right: 125px;
+		margin-bottom: 44px;
+	}
+	.order-item__price {
+		font-size: 17px;
+	}
+	.order-item__remove {
+		svg {
+			width: 25px;
+			height: 25px;
+		}
+	}
+	.order-item__right::after {
+		right: 55px;
+	}
+	.order__link {
+		font-size: 10px;
+		max-width: 141px;
+		padding: 10px;
+	}
+	.order__text {
+		font-size: 12px;
+	}
+}
+@media (max-width: 767px) {
+	.order{
+		&__items{
+			margin-bottom: 114px;
+		}
+	}
+	.order-item {
+		row-gap: 6px;
+		flex-wrap: wrap;
+		max-width: 300px;
+		width: 100%;
+		padding: 14px 12px 38px;
+	}
+	.order-item__right::after {
+		display: none;
+	}
+	.order-item__sum {
+		order: 1;
+	}
+	.order-item__remove {
+		display: none;
+	}
+	.order-item__links {
+		order: 2;
+	}
+	.order-item__right {
+		margin-top: 22px;
+		order: 3;
+		max-width: 100%;
+		width: 100%;
+	}
+	.order-item__price{
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+	}
+	.order__footer{
+		display: none;
+	}
+	.order{
+		padding-top: 50px;
+		padding-bottom: 107px;
 	}
 }
