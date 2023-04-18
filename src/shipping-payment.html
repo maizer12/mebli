@@ -9,186 +9,176 @@
 		@@include('html/header.html', {})
 		<main class="shipping-payment page">
 			<div class="shipping-payment__container">
-				<section class="payment-form">
-					<div class="payment-form__header">
-						<h4 class="payment-form__sub-title">Адрес</h4>
-						<h2 class="payment-form__title name-min">Доставка і оплата</h2>
-					</div>
-					<form action="" class="payment-form__form">
-						<p class="payment-form__name-form">Введіть свої дані</p>
-						<div class="payment-form__inner">
-							<div class="payment-form__inputs">
-								<div class="payment-form__item">
-									<p class="payment-form__name">E-mail</p>
-									<input type="mail" class="payment-form__input">
-								</div>
-								<div class="payment-form__item">
-									<p class="payment-form__name">Телефон*</p>
-									<input type="text" class="payment-form__input">
-								</div>
-								<div class="payment-form__item">
-									<p class="payment-form__name">Ім’я*</p>
-									<input type="text" class="payment-form__input">
-								</div>
-
-							</div>
-							<div class="payment-form__inputs">
-								<div class="payment-form__item payment-form__item_width">
-									<p class="payment-form__name">Місто</p>
-									<select id="language-select" class='payment-form__select' name="language">
-										<option value="ukrainian">Виберіть</option>
-										<option value="ukrainian">Київ</option>
-										<option value="ukrainian">Харків</option>
-									</select>
-								</div>
-								<div class="payment-form__item">
-									<p class="payment-form__name">Фамілія*</p>
-									<input type="text" class="payment-form__input">
-								</div>
-
-							</div>
-							<div class="payment-form__inputs">
-								<div class="payment-form__item">
-									<p class="payment-form__name">Вулиція</p>
-									<input type="text" class="payment-form__input">
-								</div>
-								<div class="payment-form__item">
-									<p class="payment-form__name">Вулиця №</p>
-									<input type="text" class="payment-form__input">
-								</div>
-								<div class="payment-form__item">
-									<p class="payment-form__name">Квартира №</p>
-									<input type="text" class="payment-form__input">
-								</div>
-
-							</div>
-							<div class="payment-form__inputs">
-								<div class="payment-form__item">
-									<p class="payment-form__name">Під’їзд</p>
-									<input type="text" class="payment-form__input">
-								</div>
-
-
-							</div>
-							<label class="payment-form__label">
-								<input type="checkbox" class="payment-form__check-box">
-								<p class="payment-form__name">Я хочу, щоб мені виставили рахунок</p>
-							</label>
+				<form action="" class="shipping-payment__form">
+					<section class="payment-form">
+						<div class="payment-form__header">
+							<h4 class="payment-form__sub-title">Адрес</h4>
+							<h2 class="payment-form__title name-min">Доставка і оплата</h2>
 						</div>
+						<div class="payment-form__form">
+							<p class="payment-form__name-form">Введіть свої дані</p>
+							<div class="payment-form__inner">
+								<div class="payment-form__inputs">
+									<div class="payment-form__item">
+										<p class="payment-form__name">E-mail</p>
+										<input type="mail" class="payment-form__input">
+									</div>
+									<div class="payment-form__item payment-form__item_dn">
+										<p class="payment-form__name">Телефон*</p>
+										<input type="number" class="payment-form__input">
+									</div>
+									<div class="payment-form__item">
+										<p class="payment-form__name">Ім’я*</p>
+										<input type="text" class="payment-form__input">
+									</div>
+									<div class="payment-form__item payment-form__item_width">
+										<p class="payment-form__name">Місто</p>
+										<select id="language-select" class='payment-form__select' name="language">
+											<option value="ukrainian">Виберіть</option>
+											<option value="ukrainian">Київ</option>
+											<option value="ukrainian">Харків</option>
+										</select>
+									</div>
+									<div class="payment-form__item">
+										<p class="payment-form__name">Фамілія*</p>
+										<input type="text" class="payment-form__input">
+									</div>
+									<div class="payment-form__item">
+										<p class="payment-form__name">Вулиція</p>
+										<input type="text" class="payment-form__input">
+									</div>
+									<div class="payment-form__item">
+										<p class="payment-form__name">Вулиця №</p>
+										<input type="text" class="payment-form__input">
+									</div>
+									<div class="payment-form__item">
+										<p class="payment-form__name">Квартира №</p>
+										<input type="text" class="payment-form__input">
+									</div>
+									<div class="payment-form__item">
+										<p class="payment-form__name">Під’їзд</p>
+										<input type="text" class="payment-form__input">
+									</div>
+								</div>
+								<label class="payment-form__label">
+									<input type="checkbox" class="payment-form__checkbox">
+									<p class="payment-form__name payment-form__text">Я хочу, щоб мені виставили рахунок</p>
+								</label>
+							</div>
 
-					</form>
-				</section>
-				<section class="payment-method">
-					<h5 class="payment-method__title">
-						Спосіб оплати
-					</h5>
-					<p class="payment-method__sub-title">Виберіть метод оплати</p>
-					<label class="payment-method__item payment-method__item-sb">
-						<div class="payment-method__content">
+						</div>
+					</section>
+					<section class="payment-method">
+						<h5 class="payment-method__title">
+							Спосіб оплати
+						</h5>
+						<p class="payment-method__sub-title">Виберіть метод оплати</p>
+						<label class="payment-method__item payment-method__item-sb">
+							<div class="payment-method__content">
+								<input type="checkbox" class="payment-method__checkbox">
+								<p class="payment-method__text">
+									Оплата кредитною/дебетовою карткою
+								</p>
+							</div>
+							<div class="payment-method__images">
+								<svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_1981)">
+										<path
+											d="M7.45355 31.841V29.723C7.45355 28.911 6.96123 28.3816 6.11736 28.3816C5.69551 28.3816 5.23843 28.5228 4.92196 28.9817C4.67596 28.5934 4.32441 28.3816 3.79702 28.3816C3.44532 28.3816 3.09393 28.4874 2.81254 28.8758V28.4522H2.07422V31.841H2.81254V29.97C2.81254 29.3701 3.12901 29.0875 3.62133 29.0875C4.11333 29.0875 4.35965 29.4053 4.35965 29.97V31.841H5.09797V29.97C5.09797 29.3701 5.44935 29.0875 5.90644 29.0875C6.39876 29.0875 6.64476 29.4053 6.64476 29.97V31.841H7.45355ZM18.3876 28.4522H17.1923V27.4285H16.454V28.4522H15.786V29.1228H16.4538V30.6761C16.4538 31.4528 16.7703 31.9116 17.6142 31.9116C17.9306 31.9116 18.282 31.8058 18.5284 31.6646L18.3173 31.0291C18.1063 31.1703 17.8603 31.2057 17.6845 31.2057C17.3329 31.2057 17.1923 30.9939 17.1923 30.6407V29.1228H18.3876V28.4522ZM24.6458 28.3815C24.224 28.3815 23.9428 28.5934 23.7669 28.8758V28.4522H23.0286V31.841H23.7669V29.9348C23.7669 29.3701 24.0129 29.0523 24.47 29.0523C24.6106 29.0523 24.7865 29.0877 24.9271 29.1229L25.138 28.417C24.9974 28.3816 24.7865 28.3816 24.6458 28.3816V28.3815ZM15.1883 28.7346C14.8366 28.4874 14.3444 28.3816 13.817 28.3816C12.9733 28.3816 12.4109 28.8052 12.4109 29.4759C12.4109 30.0408 12.8327 30.3584 13.571 30.4643L13.9226 30.4997C14.3094 30.5702 14.5203 30.6761 14.5203 30.8527C14.5203 31.0997 14.239 31.2762 13.7467 31.2762C13.2546 31.2762 12.8678 31.0997 12.6216 30.9233L12.2701 31.488C12.6569 31.7704 13.1843 31.9116 13.7115 31.9116C14.696 31.9116 15.2586 31.4528 15.2586 30.8173C15.2586 30.2172 14.8015 29.8994 14.0983 29.7936L13.7467 29.7583C13.4303 29.7229 13.1843 29.6524 13.1843 29.4407C13.1843 29.1935 13.4303 29.0523 13.817 29.0523C14.239 29.0523 14.6609 29.2287 14.8718 29.3347L15.1883 28.7346ZM34.8066 28.3816C34.3846 28.3816 34.1034 28.5934 33.9275 28.8758V28.4522H33.1892V31.841H33.9275V29.9348C33.9275 29.3701 34.1737 29.0523 34.6306 29.0523C34.7714 29.0523 34.9473 29.0877 35.0879 29.1229L35.2988 28.417C35.1582 28.3816 34.9473 28.3816 34.8066 28.3816ZM25.3842 30.1466C25.3842 31.1703 26.0872 31.9116 27.1773 31.9116C27.6694 31.9116 28.021 31.8058 28.3725 31.5234L28.021 30.9233C27.7397 31.1351 27.4585 31.2409 27.142 31.2409C26.5443 31.2409 26.1225 30.8173 26.1225 30.1466C26.1225 29.5113 26.5443 29.0875 27.142 29.0523C27.4585 29.0523 27.7397 29.1581 28.021 29.3701L28.3725 28.77C28.021 28.4874 27.6694 28.3816 27.1773 28.3816C26.0872 28.3816 25.3842 29.1229 25.3842 30.1466ZM32.2049 30.1466V28.4522H31.4666V28.8758C31.2204 28.5582 30.8689 28.3816 30.4118 28.3816C29.4625 28.3816 28.7242 29.1229 28.7242 30.1466C28.7242 31.1703 29.4625 31.9116 30.4118 31.9116C30.9039 31.9116 31.2556 31.7352 31.4666 31.4174V31.841H32.2049V30.1466ZM29.4976 30.1466C29.4976 29.5465 29.8844 29.0523 30.5172 29.0523C31.1149 29.0523 31.5369 29.5113 31.5369 30.1466C31.5369 30.7467 31.1149 31.2409 30.5172 31.2409C29.8844 31.2055 29.4976 30.7467 29.4976 30.1466ZM20.673 28.3816C19.6885 28.3816 18.9853 29.0875 18.9853 30.1466C18.9853 31.2057 19.6884 31.9116 20.7081 31.9116C21.2002 31.9116 21.6926 31.7704 22.0793 31.4528L21.7276 30.9233C21.4464 31.1351 21.0949 31.2762 20.7433 31.2762C20.2862 31.2762 19.8291 31.0645 19.7236 30.4642H22.22V30.182C22.2552 29.0875 21.6223 28.3816 20.6728 28.3816H20.673ZM20.673 29.017C21.1299 29.017 21.4466 29.2995 21.5167 29.829H19.7588C19.8291 29.3701 20.1456 29.017 20.673 29.017ZM38.9904 30.1466V27.1108H38.2521V28.8758C38.0059 28.5582 37.6544 28.3816 37.1973 28.3816C36.248 28.3816 35.5097 29.1229 35.5097 30.1466C35.5097 31.1703 36.248 31.9116 37.1973 31.9116C37.6896 31.9116 38.0411 31.7352 38.2521 31.4174V31.841H38.9904V30.1466ZM36.2833 30.1466C36.2833 29.5465 36.6699 29.0523 37.3028 29.0523C37.9005 29.0523 38.3224 29.5113 38.3224 30.1466C38.3224 30.7467 37.9005 31.2409 37.3028 31.2409C36.6699 31.2055 36.2833 30.7467 36.2833 30.1466ZM11.6021 30.1466V28.4522H10.8638V28.8758C10.6176 28.5582 10.2661 28.3816 9.80897 28.3816C8.85972 28.3816 8.1214 29.1229 8.1214 30.1466C8.1214 31.1703 8.85972 31.9116 9.80897 31.9116C10.3013 31.9116 10.6528 31.7352 10.8638 31.4174V31.841H11.6021V30.1466ZM8.85972 30.1466C8.85972 29.5465 9.2465 29.0523 9.87927 29.0523C10.477 29.0523 10.899 29.5113 10.899 30.1466C10.899 30.7467 10.477 31.2409 9.87927 31.2409C9.2465 31.2055 8.85972 30.7467 8.85972 30.1466Z"
+											fill="black" />
+										<path d="M14.9414 2.71808H26.0162V22.6981H14.9414V2.71808Z" fill="#FF5F00" />
+										<path
+											d="M15.6455 12.7082C15.6455 8.64868 17.544 5.04796 20.462 2.71807C18.3176 1.02368 15.6104 0 12.6571 0C5.6604 0 0 5.6833 0 12.7082C0 19.7329 5.6604 25.4164 12.657 25.4164C15.6103 25.4164 18.3174 24.3927 20.462 22.6981C17.544 20.4036 15.6455 16.7677 15.6455 12.7082Z"
+											fill="#EB001B" />
+										<path
+											d="M40.962 12.7082C40.962 19.7329 35.3016 25.4164 28.3051 25.4164C25.3518 25.4164 22.6447 24.3927 20.5 22.6981C23.4533 20.3684 25.3167 16.7677 25.3167 12.7082C25.3167 8.64868 23.418 5.04796 20.5 2.71807C22.6445 1.02368 25.3518 0 28.3051 0C35.3016 0 40.9622 5.71867 40.9622 12.7082H40.962Z"
+											fill="#F79E1B" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1_1981">
+											<rect width="41" height="32" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<svg width="83" height="27" viewBox="0 0 83 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_1979)">
+										<path
+											d="M42.9256 8.59709C42.8783 12.3433 46.253 14.4336 48.7952 15.6766C51.4072 16.9518 52.2845 17.7696 52.2741 18.9101C52.2547 20.6554 50.1907 21.4257 48.2593 21.4556C44.8897 21.508 42.9305 20.5428 41.3729 19.8128L40.159 25.5118C41.7218 26.2343 44.6154 26.8644 47.6161 26.892C54.6597 26.892 59.2678 23.4035 59.2928 17.9947C59.3204 11.1302 49.8295 10.7503 49.8943 7.68202C49.9167 6.75166 50.8015 5.75884 52.7403 5.5064C53.7 5.37889 56.3492 5.28129 59.3528 6.66903L60.5316 1.15517C58.9164 0.565079 56.8404 2.86102e-05 54.2557 2.86102e-05C47.6261 2.86102e-05 42.9632 3.53605 42.9256 8.59709ZM71.8592 0.474968C70.573 0.474968 69.4892 1.22771 69.0054 2.38286L58.9439 26.487H65.9824L67.383 22.6033H75.9839L76.7964 26.487H83L77.5865 0.474968H71.8592ZM72.8438 7.5018L74.8751 17.2696H69.3121L72.8438 7.5018ZM34.3918 0.475294L28.8438 26.4867H35.5509L41.0963 0.474644H34.3918M24.4698 0.474644L17.4887 18.1798L14.6647 3.12585C14.3334 1.44534 13.0248 0.474968 11.5717 0.474968H0.15984L0 1.23032C2.3428 1.74039 5.00464 2.56308 6.6173 3.44334C7.60423 3.98107 7.88565 4.45113 8.20987 5.72891L13.5585 26.487H20.6462L31.5128 0.474968H24.4698"
+											fill="url(#paint0_linear_1_1979)" />
+									</g>
+									<defs>
+										<linearGradient id="paint0_linear_1_1979" x1="38.1584" y1="27.4315" x2="38.9394" y2="-0.186849"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#222357" />
+											<stop offset="1" stop-color="#254AA5" />
+										</linearGradient>
+										<clipPath id="clip0_1_1979">
+											<rect width="83" height="27" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</label>
+						<label class="payment-method__item">
 							<input type="checkbox" class="payment-method__checkbox">
 							<p class="payment-method__text">
-								Оплата кредитною/дебетовою карткою
+								При отриманні замовлення
+
 							</p>
-						</div>
-						<div class="payment-method__images">
-							<svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g clip-path="url(#clip0_1_1981)">
-									<path
-										d="M7.45355 31.841V29.723C7.45355 28.911 6.96123 28.3816 6.11736 28.3816C5.69551 28.3816 5.23843 28.5228 4.92196 28.9817C4.67596 28.5934 4.32441 28.3816 3.79702 28.3816C3.44532 28.3816 3.09393 28.4874 2.81254 28.8758V28.4522H2.07422V31.841H2.81254V29.97C2.81254 29.3701 3.12901 29.0875 3.62133 29.0875C4.11333 29.0875 4.35965 29.4053 4.35965 29.97V31.841H5.09797V29.97C5.09797 29.3701 5.44935 29.0875 5.90644 29.0875C6.39876 29.0875 6.64476 29.4053 6.64476 29.97V31.841H7.45355ZM18.3876 28.4522H17.1923V27.4285H16.454V28.4522H15.786V29.1228H16.4538V30.6761C16.4538 31.4528 16.7703 31.9116 17.6142 31.9116C17.9306 31.9116 18.282 31.8058 18.5284 31.6646L18.3173 31.0291C18.1063 31.1703 17.8603 31.2057 17.6845 31.2057C17.3329 31.2057 17.1923 30.9939 17.1923 30.6407V29.1228H18.3876V28.4522ZM24.6458 28.3815C24.224 28.3815 23.9428 28.5934 23.7669 28.8758V28.4522H23.0286V31.841H23.7669V29.9348C23.7669 29.3701 24.0129 29.0523 24.47 29.0523C24.6106 29.0523 24.7865 29.0877 24.9271 29.1229L25.138 28.417C24.9974 28.3816 24.7865 28.3816 24.6458 28.3816V28.3815ZM15.1883 28.7346C14.8366 28.4874 14.3444 28.3816 13.817 28.3816C12.9733 28.3816 12.4109 28.8052 12.4109 29.4759C12.4109 30.0408 12.8327 30.3584 13.571 30.4643L13.9226 30.4997C14.3094 30.5702 14.5203 30.6761 14.5203 30.8527C14.5203 31.0997 14.239 31.2762 13.7467 31.2762C13.2546 31.2762 12.8678 31.0997 12.6216 30.9233L12.2701 31.488C12.6569 31.7704 13.1843 31.9116 13.7115 31.9116C14.696 31.9116 15.2586 31.4528 15.2586 30.8173C15.2586 30.2172 14.8015 29.8994 14.0983 29.7936L13.7467 29.7583C13.4303 29.7229 13.1843 29.6524 13.1843 29.4407C13.1843 29.1935 13.4303 29.0523 13.817 29.0523C14.239 29.0523 14.6609 29.2287 14.8718 29.3347L15.1883 28.7346ZM34.8066 28.3816C34.3846 28.3816 34.1034 28.5934 33.9275 28.8758V28.4522H33.1892V31.841H33.9275V29.9348C33.9275 29.3701 34.1737 29.0523 34.6306 29.0523C34.7714 29.0523 34.9473 29.0877 35.0879 29.1229L35.2988 28.417C35.1582 28.3816 34.9473 28.3816 34.8066 28.3816ZM25.3842 30.1466C25.3842 31.1703 26.0872 31.9116 27.1773 31.9116C27.6694 31.9116 28.021 31.8058 28.3725 31.5234L28.021 30.9233C27.7397 31.1351 27.4585 31.2409 27.142 31.2409C26.5443 31.2409 26.1225 30.8173 26.1225 30.1466C26.1225 29.5113 26.5443 29.0875 27.142 29.0523C27.4585 29.0523 27.7397 29.1581 28.021 29.3701L28.3725 28.77C28.021 28.4874 27.6694 28.3816 27.1773 28.3816C26.0872 28.3816 25.3842 29.1229 25.3842 30.1466ZM32.2049 30.1466V28.4522H31.4666V28.8758C31.2204 28.5582 30.8689 28.3816 30.4118 28.3816C29.4625 28.3816 28.7242 29.1229 28.7242 30.1466C28.7242 31.1703 29.4625 31.9116 30.4118 31.9116C30.9039 31.9116 31.2556 31.7352 31.4666 31.4174V31.841H32.2049V30.1466ZM29.4976 30.1466C29.4976 29.5465 29.8844 29.0523 30.5172 29.0523C31.1149 29.0523 31.5369 29.5113 31.5369 30.1466C31.5369 30.7467 31.1149 31.2409 30.5172 31.2409C29.8844 31.2055 29.4976 30.7467 29.4976 30.1466ZM20.673 28.3816C19.6885 28.3816 18.9853 29.0875 18.9853 30.1466C18.9853 31.2057 19.6884 31.9116 20.7081 31.9116C21.2002 31.9116 21.6926 31.7704 22.0793 31.4528L21.7276 30.9233C21.4464 31.1351 21.0949 31.2762 20.7433 31.2762C20.2862 31.2762 19.8291 31.0645 19.7236 30.4642H22.22V30.182C22.2552 29.0875 21.6223 28.3816 20.6728 28.3816H20.673ZM20.673 29.017C21.1299 29.017 21.4466 29.2995 21.5167 29.829H19.7588C19.8291 29.3701 20.1456 29.017 20.673 29.017ZM38.9904 30.1466V27.1108H38.2521V28.8758C38.0059 28.5582 37.6544 28.3816 37.1973 28.3816C36.248 28.3816 35.5097 29.1229 35.5097 30.1466C35.5097 31.1703 36.248 31.9116 37.1973 31.9116C37.6896 31.9116 38.0411 31.7352 38.2521 31.4174V31.841H38.9904V30.1466ZM36.2833 30.1466C36.2833 29.5465 36.6699 29.0523 37.3028 29.0523C37.9005 29.0523 38.3224 29.5113 38.3224 30.1466C38.3224 30.7467 37.9005 31.2409 37.3028 31.2409C36.6699 31.2055 36.2833 30.7467 36.2833 30.1466ZM11.6021 30.1466V28.4522H10.8638V28.8758C10.6176 28.5582 10.2661 28.3816 9.80897 28.3816C8.85972 28.3816 8.1214 29.1229 8.1214 30.1466C8.1214 31.1703 8.85972 31.9116 9.80897 31.9116C10.3013 31.9116 10.6528 31.7352 10.8638 31.4174V31.841H11.6021V30.1466ZM8.85972 30.1466C8.85972 29.5465 9.2465 29.0523 9.87927 29.0523C10.477 29.0523 10.899 29.5113 10.899 30.1466C10.899 30.7467 10.477 31.2409 9.87927 31.2409C9.2465 31.2055 8.85972 30.7467 8.85972 30.1466Z"
-										fill="black" />
-									<path d="M14.9414 2.71808H26.0162V22.6981H14.9414V2.71808Z" fill="#FF5F00" />
-									<path
-										d="M15.6455 12.7082C15.6455 8.64868 17.544 5.04796 20.462 2.71807C18.3176 1.02368 15.6104 0 12.6571 0C5.6604 0 0 5.6833 0 12.7082C0 19.7329 5.6604 25.4164 12.657 25.4164C15.6103 25.4164 18.3174 24.3927 20.462 22.6981C17.544 20.4036 15.6455 16.7677 15.6455 12.7082Z"
-										fill="#EB001B" />
-									<path
-										d="M40.962 12.7082C40.962 19.7329 35.3016 25.4164 28.3051 25.4164C25.3518 25.4164 22.6447 24.3927 20.5 22.6981C23.4533 20.3684 25.3167 16.7677 25.3167 12.7082C25.3167 8.64868 23.418 5.04796 20.5 2.71807C22.6445 1.02368 25.3518 0 28.3051 0C35.3016 0 40.9622 5.71867 40.9622 12.7082H40.962Z"
-										fill="#F79E1B" />
-								</g>
-								<defs>
-									<clipPath id="clip0_1_1981">
-										<rect width="41" height="32" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
-							<svg width="83" height="27" viewBox="0 0 83 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g clip-path="url(#clip0_1_1979)">
-									<path
-										d="M42.9256 8.59709C42.8783 12.3433 46.253 14.4336 48.7952 15.6766C51.4072 16.9518 52.2845 17.7696 52.2741 18.9101C52.2547 20.6554 50.1907 21.4257 48.2593 21.4556C44.8897 21.508 42.9305 20.5428 41.3729 19.8128L40.159 25.5118C41.7218 26.2343 44.6154 26.8644 47.6161 26.892C54.6597 26.892 59.2678 23.4035 59.2928 17.9947C59.3204 11.1302 49.8295 10.7503 49.8943 7.68202C49.9167 6.75166 50.8015 5.75884 52.7403 5.5064C53.7 5.37889 56.3492 5.28129 59.3528 6.66903L60.5316 1.15517C58.9164 0.565079 56.8404 2.86102e-05 54.2557 2.86102e-05C47.6261 2.86102e-05 42.9632 3.53605 42.9256 8.59709ZM71.8592 0.474968C70.573 0.474968 69.4892 1.22771 69.0054 2.38286L58.9439 26.487H65.9824L67.383 22.6033H75.9839L76.7964 26.487H83L77.5865 0.474968H71.8592ZM72.8438 7.5018L74.8751 17.2696H69.3121L72.8438 7.5018ZM34.3918 0.475294L28.8438 26.4867H35.5509L41.0963 0.474644H34.3918M24.4698 0.474644L17.4887 18.1798L14.6647 3.12585C14.3334 1.44534 13.0248 0.474968 11.5717 0.474968H0.15984L0 1.23032C2.3428 1.74039 5.00464 2.56308 6.6173 3.44334C7.60423 3.98107 7.88565 4.45113 8.20987 5.72891L13.5585 26.487H20.6462L31.5128 0.474968H24.4698"
-										fill="url(#paint0_linear_1_1979)" />
-								</g>
-								<defs>
-									<linearGradient id="paint0_linear_1_1979" x1="38.1584" y1="27.4315" x2="38.9394" y2="-0.186849"
-										gradientUnits="userSpaceOnUse">
-										<stop stop-color="#222357" />
-										<stop offset="1" stop-color="#254AA5" />
-									</linearGradient>
-									<clipPath id="clip0_1_1979">
-										<rect width="83" height="27" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
-						</div>
-					</label>
-					<label class="payment-method__item">
-						<input type="checkbox" class="payment-method__checkbox">
-						<p class="payment-method__text">
-							При отриманні замовлення
 
-						</p>
-
-					</label>
-					<label class="payment-method__item">
-						<input type="checkbox" class="payment-method__checkbox">
-						<p class="payment-method__text">
-							Оплачується через BNP Paribas</p>
-					</label>
-					<label class="payment-method__item">
-						<input type="checkbox" class="payment-method__checkbox">
-						<p class="payment-method__text">
-							Банківський переказ (рахунок-проформа)</p>
-					</label>
-				</section>
-				<section class="payment-order">
-					<h3 class="payment-order__title">Попередній перегляд замовлення</h3>
-					<ul class="payment-order__items">
-						<li class="order-item">
-							<div class="order-item__images-ibg">
-								<img src="./images/product.jpg" alt="order" class="order-item__img">
-							</div>
-							<div class="order-item__links">
-								<a href="#" class="order-item__link">Комод</a>
-								<a href="#" class="order-item__link order-item__link_blue">Дуб темний, молочний</a>
-								<a href="#" class="order-item__link">Термін доставки 5 днів</a>
-							</div>
-							<div class="order-item__sum">
-								<button class="order-item__btn">+</button>
-								<input type="number" class="order-item__input" value='1'>
-								<button class="order-item__btn">-</button>
-							</div>
-							<div class="order-item__right">
-								<h4 class="order-item__price">234грн</h4>
-								<button class="order-item__remove">
-									<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M12.9531 33.0491L23.0022 23M33.0513 12.9509L23.0003 23M23.0003 23L12.9531 12.9509M23.0022 23L33.0513 33.0491"
-											stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</button>
-							</div>
-						</li>
-					</ul>
-					<div class="order__footer">
-						<p class="order__text text-item">Общо:</p>
-						<p class="order__text text-item">423грн</p>
-					</div>
-					<textarea class='payment-order__text-area' placeholder='Напишіть повідомлення до заказу'>
-						</textarea>
+						</label>
+						<label class="payment-method__item">
+							<input type="checkbox" class="payment-method__checkbox">
+							<p class="payment-method__text">
+								Оплачується через BNP Paribas</p>
+						</label>
+						<label class="payment-method__item">
+							<input type="checkbox" class="payment-method__checkbox">
+							<p class="payment-method__text">
+								Банківський переказ (рахунок-проформа)</p>
+						</label>
+					</section>
+					<section class="payment-order">
+						<h3 class="payment-order__title">Попередній перегляд замовлення</h3>
+						<ul class="payment-order__items">
+							<li class="order-item">
+								<div class="order-item__images-ibg">
+									<img src="./images/product.jpg" alt="order" class="order-item__img">
+								</div>
+								<div class="order-item__links">
+									<a href="#" class="order-item__link">Комод</a>
+									<a href="#" class="order-item__link order-item__link_blue">Дуб темний, молочний</a>
+									<a href="#" class="order-item__link">Термін доставки 5 днів</a>
+								</div>
+								<div class="order-item__sum">
+									<button class="order-item__btn">+</button>
+									<input type="number" class="order-item__input" value='1'>
+									<button class="order-item__btn">-</button>
+								</div>
+								<div class="order-item__right">
+									<h4 class="order-item__price">234грн</h4>
+									<button class="order-item__remove">
+										<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.9531 33.0491L23.0022 23M33.0513 12.9509L23.0003 23M23.0003 23L12.9531 12.9509M23.0022 23L33.0513 33.0491"
+												stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</li>
+						</ul>
+						<div class="order__footer">
+							<p class="order__text text-item">Общо:</p>
+							<p class="order__text text-item">423грн</p>
+						</div>
+						<textarea class='payment-order__text-area' placeholder="Напишіть повідомлення до заказу"></textarea>
 						<label class="payment-order__label">
 							<input type="checkbox" class="payment-order__checkbox">
-							<p class="payment-order__text">Так, я згідний з умовами замовлення</p> 
+							<p class="payment-order__text">Так, я згідний з умовами замовлення</p>
 						</label>
-						<button class="payment-order__btn">Купити</button>
-				</section>
+						<button type='reset' class="payment-order__btn">Купити</button>
+					</section>
+				</form>
 			</div>
 		</main>
 		@@include('html/footer.html', {})
