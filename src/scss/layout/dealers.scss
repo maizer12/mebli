@@ -1,0 +1,144 @@
+.dealers {
+	max-width: 1347px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 177px;
+	width: 100%;
+	&__title {
+		margin-bottom: 70px;
+		font-family: Inter;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 48px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #000000;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.dealers-item {
+	display: flex;
+	column-gap: 50px;
+	&__images-ibg {
+		width: 146px;
+		height: 102px;
+	}
+	&__name {
+		font-family: Inter;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.4;
+		letter-spacing: 0em;
+		margin-bottom: 20px;
+		text-align: left;
+		color: #000000;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	&__item,
+	&__link {
+		display: flex;
+		align-items: center;
+		column-gap: 5px;
+		font-family: Inter;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: left;
+
+		svg {
+			width: 36px;
+		}
+	}
+	&__link {
+		@include svgHover($hoverColor);
+		@include hoverText($hoverColor);
+	}
+}
+@media (max-width: 1550px) {
+	.dealers {
+		max-width: 1010px;
+		padding-top: 50px;
+		padding-bottom: 137px;
+		&__title{
+			font-size: 30px;
+			margin-bottom: 52px;
+		}
+	}
+	.dealers-item {
+		column-gap: 37px;
+		&__images-ibg {
+			width: 109px;
+			height: 76px;
+		}
+		&__name {
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		&__list{
+			row-gap: 15px;
+		}
+		&__item,
+		&__link {
+			display: flex;
+			align-items: center;
+			column-gap: 5px;
+			svg {
+				width: 20px;
+			}
+		}
+	}
+}
+@media (max-width: 1230px) {
+	.dealers {
+		padding-bottom: 156px;
+		padding-top: 70px;
+		&__title{
+			margin-bottom: 77px;
+		}
+		&__items{
+			flex-direction: column;
+			row-gap: 98px;
+			align-items: center;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.dealers {
+		padding-top: 12px;
+		padding-bottom: 145px;
+		&__title{
+			font-size: 24px;
+			margin-bottom: 70px;
+		}
+	}
+	.dealers-item{
+		flex-direction: column;
+		row-gap: 5px;
+		&__images-ibg{
+			width: 20px;
+			height: 16px;
+		}
+		&__name{
+			margin-bottom: 15px;
+		}
+		&__list{
+			row-gap: 16px;
+		}
+		&__link, &__item{
+			font-size: 15px;
+			svg{
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}

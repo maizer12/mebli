@@ -1,0 +1,168 @@
+.contacts {
+	padding-top: 30px;
+	padding-bottom: 282px;
+	&__title {
+		margin-bottom: 64px;
+	}
+	&__inner {
+		position: relative;
+		&::after {
+			content: '';
+			background-image: url(../../images/contacts.jpg);
+			background-size: cover;
+			min-width: 54%;
+			max-width: 60%;
+			width: auto;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	&__content {
+		padding: 70px 0;
+	}
+	&__name {
+		font-family: Montserrat;
+		font-size: 37px;
+		font-weight: 600;
+		line-height: 1.4;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #000000;
+		margin-bottom: 16px;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 27px;
+	}
+	&__images-ibg {
+		max-width: 60%;
+		height: 656px;
+	}
+	&__item,
+	&__link {
+		display: flex;
+		align-items: center;
+		column-gap: 31px;
+		font-family: Inter;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: #000000;
+		letter-spacing: 0em;
+		text-align: left;
+
+		svg {
+			height: 38px;
+		}
+	}
+	&__content {
+		width: 100%;
+	}
+	&__link{
+		@include hoverText($hoverColor);
+		@include svgHover($hoverColor);
+	}
+}
+@media (max-width: 1550px) {
+	.contacts {
+		padding-top: 0;
+		padding-bottom: 207px;
+		&__title {
+			margin-bottom: 47px;
+			font-size: 29px;
+		}
+		&__inner {
+			display: flex;
+			align-items: center;
+			max-width: 1240px;
+			margin: 0 auto;
+			justify-content: space-between;
+			padding: 0 15px;
+			&::after {
+				position: static;
+				height: 482px;
+				width: 65%;
+			}
+		}
+		&__container {
+			padding: 0;
+			margin: 0;
+		}
+		&__content {
+			padding: 0;
+		}
+		&__name {
+			font-size: 27px;
+		}
+		&__items {
+			row-gap: 20px;
+		}
+		&__link,
+		&__item {
+			font-size: 21px;
+			svg {
+				height: 32px;
+			}
+		}
+	}
+}
+@media (max-width: 1230px) {
+	.contacts {
+		padding-bottom: 262px;
+		&__title {
+			display: none;
+		}
+		&__inner {
+			flex-direction: column;
+			row-gap: 103px;
+			width: 100%;
+			padding: 0;
+			&::after {
+				max-width: 100%;
+				min-width: 100%;
+			}
+		}
+		&__items {
+			align-items: center;
+		}
+		&__name {
+			text-align: center;
+			margin-bottom: 14px;
+			font-size: 32px;
+		}
+		&__link,
+		&__item {
+			font-size: 25px;
+			svg {
+				height: 37px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.contacts {
+		padding-top: 120px;
+		padding-bottom: 200px;
+		&__name{
+			font-size: 20px;
+		}
+		&__inner::after {
+			height: 360px;
+			row-gap: 97px;
+		}
+		&__items{
+			row-gap: 15px;
+		}
+		&__link,
+		&__item {
+			font-size: 15px;
+			column-gap: 14px;
+			svg {
+				height: 17px;
+			}
+		}
+	}
+}
