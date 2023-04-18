@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Регістрація'
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html', {})
+		<main class="form page">
+			<h1 class="form__title name-min">Стати ділером</h1>
+			<form action="" class="form-form">
+				<h2 class="form-form__name">Стати дилером фабрика Еверест</h2>
+				<p class="form-form__sub-title">
+					Відправте нам заявку на дилерство, і наш менеджер звяжеться з вами найблтжчим
+					часом
+				</p>
+				<input type="text" placeholder='Ім’я*' class="form-form__input">
+				<input type="number" placeholder='Ваш телефон*' class="form-form__input">
+				<input type="mail" placeholder='Email*' class="form-form__input">
+				<input type="text" placeholder='Повідомлення*' class="form-form__input form-form__input_mb">
+				<label class="form-form__label">
+					<input type="checkbox" class="form-form__checkbox">
+					<p class="form-form__text">Натискаючи на кнопку Відправити, ви даєте згоду на <a href="#">обробку персональних
+							даних</a> </p>
+				</label>
+				<button class="form-form__btn" type='reset'>Відповідь</button>
+			</form>
+		</main>
+		@@include('html/footer.html', {})
+	</div>
+	@@include('html/script.html', {})
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+.form {
+	padding-top: 66px;
+	padding-bottom: 125px;
+	&__title {
+		margin-bottom: 58px;
+	}
+}
+.form-form {
+	border: solid 1px #bcbcbc;
+	padding: 45px 22px 40px;
+	max-width: 582px;
+	width: 100%;
+	margin: 0 auto;
+	&__name {
+		font-family: Inter;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 1.3;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #000000;
+		margin-bottom: 32px;
+	}
+	&__sub-title {
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 57px;
+	}
+	&__input {
+		border-bottom: 1px solid #bcbcbc;
+		display: block;
+		width: 100%;
+		padding: 20px 10px;
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0em;
+		color: #000000;
+		margin-bottom: 47px;
+		@include hidePlaceholder();
+		&::placeholder {
+			color: #000000;
+		}
+		&_mb {
+			margin-bottom: 32px;
+		}
+	}
+	&__label {
+		margin-top: 42px;
+		display: flex;
+		max-width: 342px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	&__checkbox {
+		margin-right: 10px;
+		appearance: none;
+		min-width: 22px;
+		height: 22px;
+		border: 1px solid #ccc;
+		transition: border-color 0.2s ease-in-out;
+		margin-top: 6px;
+		background-color: #D9D9D9;
+		outline: none;
+		cursor: pointer;
+		&:checked {
+			border-color: black;
+			background-color: $hoverColor;
+		}
+		&:checked:after {
+			content: '';
+			display: block;
+			position: absolute;
+			background-color: #D9D9D9;
+			border: 2px solid #fff;
+			border-top: none;
+			border-right: none;
+			transform: rotate(45deg);
+		}
+	}
+	&__text {
+		font-family: Inter;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-align: left;
+		cursor: pointer;
+		color: #000000;
+		a {
+			font-weight: 600;
+			color: #0e75c0;
+			@include hoverText(#000);
+		}
+	}
+	&__btn {
+		background-color: #0881f0;
+		display: block;
+		padding: 16px;
+		border-radius: 50px;
+		max-width: 240px;
+		width: 100%;
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: #fff;
+		letter-spacing: 0em;
+		margin: 0 auto;
+		@include hoverButton();
+		@include hoverText(black);
+
+	}
+}
+@media (max-width: 1550px) {
+	.form {
+		padding-top: 40px;
+		padding-bottom: 91px;
+		&__title {
+			font-size: 29px;
+			margin-bottom: 42px;
+		}
+	}
+	.form-form{
+		max-width: 427px;
+		padding: 33px 16px 29px;
+		&__name{
+			font-size: 23px;
+			margin-bottom: 24px;
+		}
+		&__sub-title{
+			font-size: 15px;
+			color: #000000;
+			margin-bottom: 41px;
+		}
+		&__input{
+			margin-bottom: 31px;
+			padding: 14px 7px;
+			font-size: 14px;
+		}
+		&__input_mb{
+			margin-bottom: 26px;
+		}
+		&__text{
+			font-size: 10px;
+			max-width: 246px;
+		}
+		&__checkbox{
+			width: 22px;
+			height: 22px;
+			margin-top: 0;
+		}
+		&__label{
+			margin-bottom: 36px;
+		}
+		&__btn{
+			padding: 11px;
+			max-width: 176px;
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 1230px) {
+	.form {
+		padding-top: 80px;
+		padding-bottom: 305px;
+	}
+}
+@media (max-width: 767px) {
+	.form {
+		padding: 0 15px;
+		padding-top: 54px;
+		padding-bottom: 152px;
+		&__title{
+			font-size: 22px;
+			margin-bottom: 32px;
+		}
+	}
+	.form-form{
+		max-width: 380px;
+		padding: 25px 16px 22px;
+		&__name{
+			font-size: 18px;
+			margin-bottom: 18px;
+			text-align: center;
+		}
+		&__sub-title{
+			font-size: 12px;
+			color: #000000;
+			margin-bottom: 31px;
+		}
+		&__input{
+			margin-bottom: 22px;
+			padding: 11px 5px;
+			font-size: 12px;
+		}
+		&__input_mb{
+			margin-bottom: 17px;
+		}
+		&__label{
+			margin: 0 auto;
+			max-width: 210px;
+		}
+		&__text{
+			font-size: 8px;
+		}
+		&__checkbox{
+			min-width: 17px;
+			height: 17px;
+			margin-top: 0;
+		}
+		&__label{
+			margin-bottom: 26px;
+		}
+		&__btn{
+			padding: 9px;
+			max-width: 136px;
+			font-size: 11px;
+		}
+	}
+}
