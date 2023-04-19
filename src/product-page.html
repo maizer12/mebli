@@ -89,7 +89,7 @@
 						</div>
 						<p class="product-content__text text-item">Прихожа Ривьева</p>
 						<div class="product-content__buttons">
-							<button class="product-content__btn">Купити в один клік</button>
+							<button id='by-now' class="product-content__btn">Купити в один клік</button>
 							<button class="product-content__add">
 								<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -421,20 +421,20 @@
 					<div class="popup-order">
 						<div class="popup-order__header">
 							<div class="popup-order__content">
-							<h5 class="popup-order__name">Прихожа Ривьева</h5>
-							<div class="popup-order__prices">
-								<div class="popup-order__selet">
-									<h3 class="popup-order__selt-num">
-										423грн
+								<h5 class="popup-order__name">Прихожа Ривьева</h5>
+								<div class="popup-order__prices">
+									<div class="popup-order__selet">
+										<h3 class="popup-order__selt-num">
+											423грн
+										</h3>
+										<p class="popup-order__selt-text">
+											знижка -32%
+										</p>
+									</div>
+									<h3 class="popup-order__price">
+										234грн
 									</h3>
-									<p class="popup-order__selt-text">
-										знижка -32%
-									</p>
 								</div>
-								<h3 class="popup-order__price">
-									234грн
-								</h3>
-							</div>
 							</div>
 							<div class="popup-order__images-ibg">
 								<img src="./images/product.jpg" alt="product" class="popup-order__img">
@@ -443,12 +443,28 @@
 						<p class="popup-order__text">Введіть номер телефону</p>
 						<input type="number" class="popup-order__input">
 						<div class="popup-order__buttons">
-							<button class="popup-order__btn popup-order__add">+</button> 
+							<button class="popup-order__btn popup-order__add">+</button>
 							<input type="number" class="popup-order__number" value='1'>
-							<button class="popup-order__btn popup-order__min">-</button> 
+							<button class="popup-order__btn popup-order__min">-</button>
 						</div>
-						<button class="popup-order__button">Оформити заказ</button>
+						<button id='successful-btn' class="popup-order__button">Оформити заказ</button>
+					</div>
+					<div class="popup-successful">
+						<div class="popup-successful__content">
+							<h3 class="popup-successful__title">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M21 40.6875C31.8731 40.6875 40.6875 31.8731 40.6875 21C40.6875 10.1269 31.8731 1.3125 21 1.3125C10.1269 1.3125 1.3125 10.1269 1.3125 21C1.3125 31.8731 10.1269 40.6875 21 40.6875Z"
+										fill="black" />
+									<path
+										d="M30.1875 9.1875L16.4062 23.3625L11.8125 18.6375L7.21875 23.3625L16.4062 32.8125L34.7812 13.9125L30.1875 9.1875Z"
+										fill="white" />
+								</svg>
+								Ваший заказ прийнятий
+							</h3>
+							<p class="popup-successful__text">В скорім часі з вами зв’яжуться для обговорення вашого замовлення</p>
 						</div>
+						<button id='successful-close' class="popup-successful__btn popup-order__button">Продовжити</button>
 					</div>
 				</section>
 			</div>
