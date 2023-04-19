@@ -1,3 +1,4 @@
+//акордион
 export default $('#accordion-product').accordion({
 	active: null,
 	collapsible: true,
