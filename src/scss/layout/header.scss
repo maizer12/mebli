@@ -2,10 +2,8 @@
 .header {
 	width: 100%;
 	padding: 49px 0 55px;
-	&.sticky {
-		// ..стили для липкого хедера
-	}
-	// .header__container
+	z-index: 35;
+
 	&__container {
 		display: flex;
 		align-items: center;
@@ -18,6 +16,98 @@
 	&__button {
 		@include svgHover(#199cff);
 	}
+}
+.scrolled {
+	position: fixed;
+	top: 0;
+	padding: 10px;
+	background-color: #000000;
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		background-color: #fff;
+	}
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		background-color: #fff;
+	}
+	.search__input {
+		background-color: rgba(#ffff, 0.4);
+		color: #fff;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+	.language-select {
+		background: none;
+		color: #fff;
+	}
+	.search {
+		svg {
+			path {
+				stroke: #fff;
+			}
+		}
+	}
+	.language-select-arrow {
+		svg {
+			path {
+				fill: #fff;
+			}
+		}
+	}
+	.menu__link {
+		color: #fff;
+		border-color: #fff;
+	}
+	.header__button {
+		svg {
+			filter: brightness(0) invert(1);
+			path {
+				stroke: #fff;
+			}
+		}
+	}
+	// .search__input {
+	// 	background: none;
+	// 	color: #000000;
+	// 	&::placeholder {
+	// 		color: #B1AEAE;
+	// 	}
+	// }
+	// .language-select{
+	// 	background:none;
+	// 	color:#000000;
+	// }
+	// .search {
+	// 	svg {
+	// 		path {
+	// 			stroke: #B1AEAE;
+	// 		}
+	// 	}
+	// }
+	// .language-select-arrow{
+	// 	svg{
+	// 		path{
+	// 			fill:#000000;
+	// 		}
+	// 	}
+	// }
+	// .menu__link {
+	// 	color: #000000;
+	// 	border-color: #000000;
+	// }
+	// .header__button {
+	// 	svg{
+	// 		filter:none;
+	// 	}
+	// 	svg {
+	// 		path {
+	// 			stroke: #000000;
+	// 		}
+	// 	}
+	// }
 }
 .menu {
 	&__list {
@@ -37,13 +127,14 @@
 }
 .header-search {
 	display: flex;
-	column-gap: 10px;
+	column-gap: 15px;
 }
 .search {
 	width: 264px;
 	position: relative;
 	&__input {
 		border: solid 1px #d9d9d9;
+		border-radius: 2.25px;
 		font-family: Inter;
 		font-size: 14px;
 		font-weight: 400;
@@ -65,24 +156,27 @@
 		@include svgHover(#199cff);
 	}
 }
+.language-select-items {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	column-gap: 5px;
+}
 .language-select {
 	@include hoverText(#007bff);
 	display: block;
 	font-weight: 400;
-	width: 100%;
-	width: 60px;
 	background-position-y: center;
 	background-position-x: right;
 	box-sizing: border-box;
 	appearance: none;
-	background-image: url('../../images/arrow-lang.svg');
-	background-repeat: no-repeat, repeat;
-	background-size: 0.65em auto, 70%;
 	cursor: pointer;
+	position: relative;
 	option {
 		padding: 10px;
 		font-size: 16px;
 		cursor: pointer;
+		background: none;
 		&:checked {
 			background-color: #007bff;
 			color: #fff;
@@ -142,6 +236,9 @@
 }
 
 @media (max-width: 1550px) {
+	.logo__image {
+		max-width: 140px;
+	}
 	.header__container {
 		max-width: 1240px;
 		height: 100%;
@@ -224,7 +321,7 @@
 	.header__buttons {
 		display: none;
 	}
-	.language-select {
+	.language-select-items {
 		display: none;
 	}
 	.header-search {
@@ -234,7 +331,17 @@
 	.search {
 		width: 100%;
 	}
-	.header {
-		padding: 24px 0 46px;
+	.scrolled {
+		.menu__link {
+			color: #000;
+		}
+		
+	}
+	.menu-open {
+		.icon-menu span,
+		.icon-menu::before,
+		.icon-menu::after {
+			background-color: black;
+		}
 	}
 }

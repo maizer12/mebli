@@ -9,7 +9,6 @@
 		@@include('html/header.html', {})
 		<main class="product-page page">
 			<div class="product-page__container">
-				<h2 class="product-page__title name-min">Корпусні меблі</h2>
 				<ul class="bread-crumbs">
 					<li class="bread-crumbs__item">
 						<a href="#" class="bread-crumbs__link">Корпусні меблі</a>
@@ -19,31 +18,16 @@
 					</li>
 				</ul>
 				<section class="product">
-					<div class="product-images">
-						<div class="product-images__images-ibg product-images__images-ibg_width">
-							<a href="./images/product.jpg" class='lightbox-image' data-lightbox="gallery">
-								<img src="./images/product.jpg" alt="product" class="product-images__img">
-							</a>
-						</div>
-						<div class="product-images__mini">
-							<div class="product-images__images-ibg">
-								<a href="./images/product.jpg" class='lightbox-image' data-lightbox="gallery">
-									<img src="./images/product.jpg" alt="product" class="product-images__img">
-								</a>
-							</div>
-							<div class="product-images__images-ibg">
-								<a href="./images/product.jpg" class='lightbox-image' data-lightbox="gallery">
-									<img src="./images/product.jpg" alt="product" class="product-images__img">
-								</a>
-							</div>
-							<div class="product-images__images-ibg">
-								<a href="./images/product.jpg" class='lightbox-image' data-lightbox="gallery">
-									<img src="./images/product.jpg" alt="product" class="product-images__img">
-								</a>
-							</div>
-						</div>
+					<div class="product__inner">
+					<div class="product-images" data-allowfullscreen="true" >
+						<img src="./images/product.jpg" alt="product" class="product-images__img">
+						<img src="./images/product.jpg" alt="product" class="product-images__img">
+						<img src="./images/product.jpg" alt="product" class="product-images__img">
+						<img src="./images/product.jpg" alt="product" class="product-images__img">
+						<img src="./images/product.jpg" alt="product" class="product-images__img">
 					</div>
 					<div class="product-content">
+						<h2 class="product-content__title">Прихожа Ривьева</h2>
 						<div class="product-content__header">
 							<div class="product-content-price">
 								<div class="product-content-price__content">
@@ -52,42 +36,21 @@
 								</div>
 								<h2 class="product-content-price__price">234грн</h2>
 							</div>
-							<div class="product-content-rating">
-								<h5 class="product-content-rating__num">
-									4.9/5
-								</h5>
-								<div class="product-content-rating__items">
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg">
-										<path fill='#b1b1b1'
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-								</div>
-								<a href="#" class="product-content-rating__link">9 Оцінок</a>
-
-							</div>
 						</div>
-						<p class="product-content__text text-item">Прихожа Ривьева</p>
+						<div class="product-colors">
+							<h5 class="product-colors__title">Кольори:</h5>
+							<ul class="product-colors__items">
+								<li class="product-colors__item">
+									<a href="#" style='background-color: #088031;'  class="product-colors__link"></a>
+								</li>
+								<li class="product-colors__item">
+									<a href="#" style='background-color: #7C7F85;'  class="product-colors__link"></a>
+								</li>
+								<li class="product-colors__item">
+									<a href="#" style='background-color: #1381E7;'   class="product-colors__link"></a>
+								</li>
+							</ul>
+						</div>
 						<div class="product-content__buttons">
 							<button id='by-now' class="product-content__btn">Купити в один клік</button>
 							<button class="product-content__add">
@@ -97,326 +60,33 @@
 										fill="black" />
 								</svg>
 							</button>
-							<div class="product-content-rating product-content-rating-adapt">
-								<h5 class="product-content-rating__num">
-									4.9/5
-								</h5>
-								<div class="product-content-rating__items">
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-									<svg width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg">
-										<path fill='#b1b1b1'
-											d="M11.0979 1.8541C11.6966 0.0114784 14.3034 0.0114799 14.9021 1.8541L16.3677 6.36475C16.6355 7.18879 17.4034 7.74671 18.2698 7.74671L23.0126 7.74671C24.95 7.74671 25.7556 10.2259 24.1882 11.3647L20.3512 14.1525C19.6502 14.6618 19.3569 15.5645 19.6246 16.3885L21.0902 20.8992C21.6889 22.7418 19.58 24.2741 18.0126 23.1353L14.1756 20.3475C13.4746 19.8382 12.5254 19.8382 11.8244 20.3475L7.98744 23.1353C6.42002 24.2741 4.31106 22.7418 4.90976 20.8992L6.37536 16.3885C6.64311 15.5645 6.34979 14.6618 5.64882 14.1525L1.81183 11.3647C0.244407 10.2259 1.04996 7.74671 2.9874 7.74671L7.73018 7.74671C8.59663 7.74671 9.36454 7.18879 9.63229 6.36475L11.0979 1.8541Z"
-											fill="#0074BE" />
-									</svg>
-								</div>
-								<a href="#" class="product-content-rating__link">9 Оцінок</a>
+						</div>
 
-							</div>
-						</div>
-						<div id="accordion-product" class="product-content-accordions">
-							<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-								</svg>
-							</h5>
-							<p class="product-content-accordions__content accordion-content text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-								veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-								Reiciendis!
-							</p>
-							<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-								</svg>
-							</h5>
-							<p class="product-content-accordions__content accordion-content text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-								veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-								Reiciendis!
-							</p>
-							<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-								</svg>
-							</h5>
-							<p class="product-content-accordions__content accordion-content text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-								veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-								Reiciendis!
-							</p>
-							<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-								</svg>
-							</h5>
-							<p class="product-content-accordions__content accordion-content text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-								veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-								Reiciendis!
-							</p>
-							</li>
-						</div>
 					</div>
-				</section>
-				<div id="accordion-product-adapt" class="product-content-accordions adaptive-content-accordions">
-					<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-						<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-						</svg>
-					</h5>
-					<p class="product-content-accordions__content accordion-content text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-						veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-						Reiciendis!
-					</p>
-					<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-						<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-						</svg>
-					</h5>
-					<p class="product-content-accordions__content accordion-content text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-						veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-						Reiciendis!
-					</p>
-					<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-						<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-						</svg>
-					</h5>
-					<p class="product-content-accordions__content accordion-content text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-						veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-						Reiciendis!
-					</p>
-					<h5 class="product-content-accordions__name accordion-header text-item">Про нас
-						<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7 12L0.0717954 1.30507e-06L13.9282 9.36995e-08L7 12Z" fill="black" />
-						</svg>
-					</h5>
-					<p class="product-content-accordions__content accordion-content text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam obcaecati quas nam! Excepturi,
-						veritatis! Quasi placeat itaque eum quos? Iste incidunt reprehenderit nobis eius quod aut tempore at.
-						Reiciendis!
-					</p>
-					</li>
 				</div>
-				<ul class="product-recommend">
-					<li class="product-recommend__item">
-						<div class="product-recommend__image-ibg_contain">
-							<img src="./images/recomend.jpg" alt="recommend" class="product-recommend__img">
-							<button class="product-recommend__btn">
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.81217 4.16669C4.64811 4.16669 2.08301 6.73179 2.08301 9.89586C2.08301 15.625 8.85384 20.8334 12.4997 22.0448C16.1455 20.8334 22.9163 15.625 22.9163 9.89586C22.9163 6.73179 20.3512 4.16669 17.1872 4.16669C15.2497 4.16669 13.5361 5.12867 12.4997 6.60106C11.9714 5.84857 11.2696 5.23444 10.4536 4.81069C9.63765 4.38694 8.7316 4.16604 7.81217 4.16669Z"
-										stroke="#AEAAAA" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</button>
-						</div>
-						<div class="product-recommend__content">
-							<div class="product-recommend__text">Прихожая Ривьера</div>
-							<div class="product-recommend__rate">
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill='#c1c1c1'
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-
-							</div>
-						</div>
-						<a href="#" class="product-recommend__link">Детальніше</a>
-					</li>
-					<li class="product-recommend__item">
-						<div class="product-recommend__image-ibg_contain">
-							<img src="./images/recomend.jpg" alt="recommend" class="product-recommend__img">
-							<button class="product-recommend__btn">
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.81217 4.16669C4.64811 4.16669 2.08301 6.73179 2.08301 9.89586C2.08301 15.625 8.85384 20.8334 12.4997 22.0448C16.1455 20.8334 22.9163 15.625 22.9163 9.89586C22.9163 6.73179 20.3512 4.16669 17.1872 4.16669C15.2497 4.16669 13.5361 5.12867 12.4997 6.60106C11.9714 5.84857 11.2696 5.23444 10.4536 4.81069C9.63765 4.38694 8.7316 4.16604 7.81217 4.16669Z"
-										stroke="#AEAAAA" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</button>
-						</div>
-						<div class="product-recommend__content">
-							<div class="product-recommend__text">Прихожая Ривьера</div>
-							<div class="product-recommend__rate">
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill='#c1c1c1'
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-
-							</div>
-						</div>
-						<a href="#" class="product-recommend__link">Детальніше</a>
-					</li>
-					<li class="product-recommend__item">
-						<div class="product-recommend__image-ibg_contain">
-							<img src="./images/recomend.jpg" alt="recommend" class="product-recommend__img">
-							<button class="product-recommend__btn">
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.81217 4.16669C4.64811 4.16669 2.08301 6.73179 2.08301 9.89586C2.08301 15.625 8.85384 20.8334 12.4997 22.0448C16.1455 20.8334 22.9163 15.625 22.9163 9.89586C22.9163 6.73179 20.3512 4.16669 17.1872 4.16669C15.2497 4.16669 13.5361 5.12867 12.4997 6.60106C11.9714 5.84857 11.2696 5.23444 10.4536 4.81069C9.63765 4.38694 8.7316 4.16604 7.81217 4.16669Z"
-										stroke="#AEAAAA" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</button>
-						</div>
-						<div class="product-recommend__content">
-							<div class="product-recommend__text">Прихожая Ривьера</div>
-							<div class="product-recommend__rate">
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill='#c1c1c1'
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-
-							</div>
-						</div>
-						<a href="#" class="product-recommend__link">Детальніше</a>
-					</li>
-					<li class="product-recommend__item">
-						<div class="product-recommend__image-ibg_contain">
-							<img src="./images/recomend.jpg" alt="recommend" class="product-recommend__img">
-							<button class="product-recommend__btn">
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.81217 4.16669C4.64811 4.16669 2.08301 6.73179 2.08301 9.89586C2.08301 15.625 8.85384 20.8334 12.4997 22.0448C16.1455 20.8334 22.9163 15.625 22.9163 9.89586C22.9163 6.73179 20.3512 4.16669 17.1872 4.16669C15.2497 4.16669 13.5361 5.12867 12.4997 6.60106C11.9714 5.84857 11.2696 5.23444 10.4536 4.81069C9.63765 4.38694 8.7316 4.16604 7.81217 4.16669Z"
-										stroke="#AEAAAA" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</button>
-						</div>
-						<div class="product-recommend__content">
-							<div class="product-recommend__text">Прихожая Ривьера</div>
-							<div class="product-recommend__rate">
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill='#c1c1c1'
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-
-							</div>
-						</div>
-						<a href="#" class="product-recommend__link">Детальніше</a>
-					</li>
-					<li class="product-recommend__item">
-						<div class="product-recommend__image-ibg_contain">
-							<img src="./images/recomend.jpg" alt="recommend" class="product-recommend__img">
-							<button class="product-recommend__btn">
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M7.81217 4.16669C4.64811 4.16669 2.08301 6.73179 2.08301 9.89586C2.08301 15.625 8.85384 20.8334 12.4997 22.0448C16.1455 20.8334 22.9163 15.625 22.9163 9.89586C22.9163 6.73179 20.3512 4.16669 17.1872 4.16669C15.2497 4.16669 13.5361 5.12867 12.4997 6.60106C11.9714 5.84857 11.2696 5.23444 10.4536 4.81069C9.63765 4.38694 8.7316 4.16604 7.81217 4.16669Z"
-										stroke="#AEAAAA" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</button>
-						</div>
-						<div class="product-recommend__content">
-							<div class="product-recommend__text">Прихожая Ривьера</div>
-							<div class="product-recommend__rate">
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill='#c1c1c1'
-										d="M3.9561 1.75164C4.44205 0.256029 6.55795 0.256029 7.0439 1.75164C7.26123 2.4205 7.88453 2.87336 8.58781 2.87336C10.1604 2.87336 10.8142 4.88569 9.54199 5.81003C8.97302 6.22341 8.73495 6.95614 8.95227 7.625C9.43823 9.12062 7.72643 10.3643 6.45418 9.43997C5.88522 9.02659 5.11478 9.02659 4.54582 9.43997C3.27357 10.3643 1.56177 9.12062 2.04773 7.625C2.26505 6.95614 2.02698 6.22341 1.45801 5.81003C0.185763 4.88569 0.839611 2.87336 2.41219 2.87336C3.11547 2.87336 3.73877 2.4205 3.9561 1.75164Z"
-										fill="#FBD408" />
-								</svg>
-
-							</div>
-						</div>
-						<a href="#" class="product-recommend__link">Детальніше</a>
-					</li>
-				</ul>
+				<div id="tabs" class='product__tabs tabs'>
+					<ul class='tabs__header'>
+						<li><a href="#tabs-1" class='tabs__name'>Описання</a></li>
+						<li><a href="#tabs-2" class='tabs__name'>Монтаж</a></li>
+						<li><a href="#tabs-3" class='tabs__name'>Оплата</a></li>
+						<li><a href="#tabs-4" class='tabs__name'>Монтажна схема</a></li>
+					</ul>
+					<div id="tabs-1">
+						<p class='tabs__text'>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					</div>
+					<div id="tabs-2" >
+						<p class='tabs__text'>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-3">
+						<p class='tabs__text'>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+					</div>
+					<div id="tabs-4">
+						<p class='tabs__text'>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					</div>
+				</div>
+				</section>
+				
 				<section class="popup">
 					<div class="popup-order">
 						<div class="popup-order__header">

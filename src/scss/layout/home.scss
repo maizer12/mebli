@@ -1,9 +1,106 @@
+.wrapper-home {
+	.header {
+		position: absolute;
+		top: 0;
+		z-index: 25;
+	}
+	.icon-menu span, .icon-menu::before, .icon-menu::after{
+		background-color:#fff;
+	}
+	.search__input {
+		background-color: rgba(#ffff, 0.4);
+		color: #fff;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+	.language-select {
+		background: none;
+		color: #fff;
+	}
+	.search {
+		svg {
+			path {
+				stroke: #fff;
+			}
+		}
+	}
+	.language-select-arrow {
+		svg {
+			path {
+				fill: #fff;
+			}
+		}
+	}
+	.menu__link {
+		color: #fff;
+		border-color: #fff;
+	}
+	.header__button {
+		svg {
+			filter: brightness(0) invert(1);
+			path {
+				stroke: #fff;
+			}
+		}
+	}
+	.scrolled {
+		position: fixed;
+		top: 0;
+		padding: 10px;
+		background-color: #000000;
+		// .search__input {
+		// 	background: none;
+		// 	color: #000000;
+		// 	&::placeholder {
+		// 		color: #B1AEAE;
+		// 	}
+		// }
+		// .language-select{
+		// 	background:none;
+		// 	color:#000000;
+		// }
+		// .search {
+		// 	svg {
+		// 		path {
+		// 			stroke: #B1AEAE;
+		// 		}
+		// 	}
+		// }
+		// .language-select-arrow{
+		// 	svg{
+		// 		path{
+		// 			fill:#000000;
+		// 		}
+		// 	}
+		// }
+		// .menu__link {
+		// 	color: #000000;
+		// 	border-color: #000000;
+		// }
+		// .header__button {
+		// 	svg{
+		// 		filter:none;
+		// 	}
+		// 	svg {
+		// 		path {
+		// 			stroke: #000000;
+		// 		}
+		// 	}
+		// }
+	}
+}
+
 .banner {
 	background-image: url(../../images/banner.jpg);
-	
 	position: relative;
 	background-size: cover;
-	padding: 48px 0 70px;
+	padding: 0px;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 	&::before {
 		content: '';
 		width: 100%;
@@ -11,9 +108,10 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		z-index: 2;
 		background-color: rgba(black, 0.4);
 	}
-	&__video{
+	&__video {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -24,6 +122,7 @@
 	&__container {
 		position: relative;
 		z-index: 2;
+		width: 100%;
 	}
 	&__title {
 		font-family: Inter;
@@ -171,7 +270,7 @@
 		@include svgHover(rgb(148, 20, 20));
 	}
 	&__text {
-		font-family: Montserrat;
+		font-family: Inter;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.2;
@@ -214,7 +313,6 @@
 		transition: 0.6s;
 		&:hover {
 			box-shadow: 0 2px 8px black;
-			//background-color: red !important;
 		}
 	}
 	&__add {
@@ -230,7 +328,10 @@
 	}
 }
 .companies {
-	padding-bottom: 199px;
+	background-color: #f3f3f3;
+	padding-bottom: 160px;
+	padding-top: 100px;
+
 	&__items {
 		display: flex;
 		justify-content: space-between;
@@ -240,6 +341,7 @@
 .companies-item {
 	max-width: 271px;
 	&__images-ibg {
+		background-color: #fff;
 		transition: 0.6s;
 		box-shadow: 0px 4px 4px 0px #00000040;
 		width: 227px;
@@ -258,19 +360,7 @@
 		text-align: center;
 		color: #000000;
 		position: relative;
-		display: flex;
-		column-gap: 10px;
 		transition: 0.5s;
-
-		span {
-			min-width: 5px;
-			height: 5px;
-			background-color: #000000;
-			display: block;
-			border-radius: 50%;
-			margin-top: 11px;
-			transition: 0.5s;
-		}
 	}
 	&:hover {
 		.companies-item__images-ibg {
@@ -368,7 +458,7 @@
 		color: #000000;
 	}
 	&__item {
-		font-family: Montserrat;
+		font-family: Inter;
 		font-size: 32px;
 		font-weight: 400;
 		line-height: 1.6;
@@ -455,7 +545,7 @@
 		font-size: 35px;
 	}
 	.products {
-		padding-bottom: 131px;
+		padding-bottom: 71px;
 	}
 	.products__container {
 		max-width: 1240px;
@@ -494,9 +584,7 @@
 			height: 19px;
 		}
 	}
-	.companies {
-		padding-bottom: 130px;
-	}
+
 	.companies__container {
 		max-width: 1270px;
 	}
@@ -504,7 +592,6 @@
 		column-gap: 59px;
 	}
 	.companies-item__desc {
-		column-gap: 5px;
 		font-size: 14px;
 	}
 	.companies-item__images-ibg {
@@ -757,10 +844,17 @@
 	.banner-fabric__contant {
 		padding-left: 0;
 	}
+	.banner__container {
+		padding-top: 100px;
+	}
+	.banner__buttons {
+		margin-bottom: 70px;
+	}
 }
 @media (max-width: 767px) {
 	.banner {
-		padding: 54px 0 0px;
+		padding: 84px 0 0px;
+		height: auto;
 		&__container {
 			max-width: 677px;
 		}
@@ -923,5 +1017,14 @@
 	}
 	.products__container {
 		padding: 0;
+	}
+
+	.wrapper-home .scrolled {
+		padding: 0;
+		padding-bottom: 12px;
+		padding-top: 12px;
+	}
+	.wrapper-home .menu__link{
+		color:#000000;
 	}
 }

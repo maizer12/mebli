@@ -1,14 +1,8 @@
-//акордион
-export default $('#accordion-product').accordion({
-	active: null,
-	collapsible: true,
-	heightStyle: 'content',
-})
-$('#accordion-product-adapt').accordion({
-	active: null,
-	collapsible: true,
-	heightStyle: 'content',
-})
+//таби
+$( function() {
+	$( "#tabs" ).tabs();
+} );
+//другое
 
 const byNow = document.querySelector('#by-now')
 const popupMy = document.querySelector('.popup')

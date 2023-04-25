@@ -28,11 +28,19 @@
         </button>
         <input type="text" placeholder='Пошук' class="search__input">
       </label>
-      <select id="language-select" class='language-select name-item' name="language">
-        <option value="ukrainian">UA</option>
-        <option value="russian">RU</option>
-        <option value="english">US</option>
-      </select>
+      <label class="language-select-items">
+        <select id="language-select" class='language-select name-item' name="language">
+          <option value="ukrainian">UA</option>
+          <option value="russian">RU</option>
+          <option value="english">US</option>
+        </select>
+        <p class='language-select-arrow'>
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.34497 11.0296L0.33206 0.614934L12.3579 0.614933L6.34497 11.0296Z" fill="#1B1313" />
+          </svg>
+        </p>
+      </label>
     </div>
     <div class="header__buttons">
       <a href="/" class="header__button">
