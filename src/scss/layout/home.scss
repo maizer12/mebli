@@ -35,6 +35,7 @@
 	.menu__link {
 		color: #fff;
 		border-color: #fff;
+		@include hoverText($hoverColor);
 	}
 	.header__button {
 		svg {
@@ -43,6 +44,12 @@
 				stroke: #fff;
 			}
 		}
+		&:hover{
+			svg{
+				filter: none;
+			}
+		}
+		@include svgHover($hoverColor);
 	}
 	.scrolled {
 		position: fixed;
