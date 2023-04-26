@@ -4,8 +4,10 @@
 		top: 0;
 		z-index: 25;
 	}
-	.icon-menu span, .icon-menu::before, .icon-menu::after{
-		background-color:#fff;
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		background-color: #fff;
 	}
 	.search__input {
 		background-color: rgba(#ffff, 0.4);
@@ -14,9 +16,20 @@
 			color: #fff;
 		}
 	}
+	.language-select-items {
+		@include svgHover($hoverColor);
+		&:hover {
+			svg {
+				path {
+					fill: $hoverColor;
+				}
+			}
+		}
+	}
 	.language-select {
 		background: none;
 		color: #fff;
+		@include hoverText(#007bff);
 	}
 	.search {
 		svg {
@@ -44,12 +57,13 @@
 				stroke: #fff;
 			}
 		}
-		&:hover{
-			svg{
+		&:hover {
+			svg {
 				filter: none;
 			}
 		}
 		@include svgHover($hoverColor);
+		
 	}
 	.scrolled {
 		position: fixed;
@@ -1031,7 +1045,7 @@
 		padding-bottom: 12px;
 		padding-top: 12px;
 	}
-	.wrapper-home .menu__link{
-		color:#000000;
+	.wrapper-home .menu__link {
+		color: #000000;
 	}
 }

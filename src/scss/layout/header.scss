@@ -39,7 +39,7 @@
 		&::placeholder {
 			color: #fff;
 		}
-		&:focus{
+		&:focus {
 			border-color: $hoverColor;
 		}
 	}
@@ -72,7 +72,7 @@
 				stroke: #fff;
 			}
 		}
-		&:hover{
+		&:hover {
 			svg {
 				filter: none;
 			}
@@ -170,9 +170,22 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	column-gap: 5px;
+	position: relative;
+	cursor: pointer;
+	@include svgHover($hoverColor);
+	&:hover {
+		svg {
+			path {
+				fill: $hoverColor;
+			}
+		}
+	}
 }
 .language-select {
+	width: 60px;
+	position: relative;
+	z-index: 2;
+	background:none;
 	@include hoverText(#007bff);
 	display: block;
 	font-weight: 400;
@@ -182,16 +195,26 @@
 	appearance: none;
 	cursor: pointer;
 	position: relative;
-	option {
+	option{
 		padding: 10px;
 		font-size: 16px;
 		cursor: pointer;
 		background: none;
+		font-family: $mainFont;
+		padding: 5px;
+		background-color: rgba(#000000, 0.2);
+		color: #333;
+		font-size: 16px;
+		padding: 8px 12px;
 		&:checked {
 			background-color: #007bff;
 			color: #fff;
 		}
 	}
+}
+.language-select-arrow {
+	position: absolute;
+	right: 0;
 }
 .menu__link-active {
 	font-weight: 500;
@@ -273,6 +296,9 @@
 			width: 100%;
 		}
 	}
+	.scrolled{
+		padding: 10px 0;
+	}
 }
 @media (max-width: 1230px) {
 	.header__container {
@@ -298,7 +324,7 @@
 	.menu__list {
 		justify-content: space-between;
 	}
-	.scrolled{
+	.scrolled {
 		padding: 10px 0;
 	}
 }
