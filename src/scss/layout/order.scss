@@ -2,22 +2,46 @@
 	max-width: 1180px;
 	padding: 0 15px;
 	margin: 0 auto;
-	padding-top: 106px;
+	padding-top: 66px;
 	padding-bottom: 114px;
+	width: 100%;
 	&__title {
-		margin-bottom: 119px;
+		margin-bottom: 26px;
+	}
+	&__sub-title {
+		margin-bottom: 12px;
+		font-family: Raleway;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+	&__inner {
+		background-color: #eeeeee;
+		max-width: 879px;
+		width: 100%;
+		margin: 0 auto;
 	}
 	&__items {
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
+		position: relative;
+		&::after {
+			content: '';
+			width: 100%;
+			background-color: #c3c3c3;
+			width: 100%;
+			height: 1px;
+		}
 	}
 	&__footer {
 		display: flex;
-		justify-content: space-between;
+		justify-content: end;
+		column-gap: 20px;
 		align-items: center;
-		padding: 21px;
-		max-width: 1000px;
+		padding: 12px 21px;
 		margin-bottom: 81px;
 	}
 	&__link {
@@ -35,15 +59,33 @@
 		border-radius: 40px;
 		@include hoverButton();
 	}
+	&__text {
+		font-family: Inter;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: left;
+		&-price {
+			font-size: 24px;
+		}
+	}
 }
 .order-item {
-	padding: 0 24px;
-	background-color: #eeeeee;
+	padding: 11px 18px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 1180px;
 	overflow: hidden;
+	&__name {
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.2;
+		letter-spacing: 0em;
+		text-align: left;
+		width: 100%;
+	}
 	&__images-ibg {
 		height: 100px;
 		width: 82px;
@@ -53,13 +95,12 @@
 		row-gap: 15px;
 		display: flex;
 		flex-wrap: wrap;
-		max-width: 320px;
-		margin-left: -100px;
+		max-width: 200px;
 	}
 	&__link {
 		position: relative;
 		font-family: Inter;
-		font-size: 20px;
+		font-size: 12px;
 		font-weight: 500;
 		line-height: 1.2;
 		letter-spacing: 0em;
@@ -125,7 +166,7 @@
 		&::after {
 			content: '';
 			width: 1px;
-			height: 200px;
+			height: 200%;
 			position: absolute;
 			right: 75px;
 			background-color: #bdbdbd;
@@ -239,8 +280,8 @@
 	}
 }
 @media (max-width: 767px) {
-	.order{
-		&__items{
+	.order {
+		&__items {
 			margin-bottom: 114px;
 		}
 	}
@@ -269,15 +310,15 @@
 		max-width: 100%;
 		width: 100%;
 	}
-	.order-item__price{
+	.order-item__price {
 		max-width: 100%;
 		width: 100%;
 		text-align: center;
 	}
-	.order__footer{
+	.order__footer {
 		display: none;
 	}
-	.order{
+	.order {
 		padding-top: 50px;
 		padding-bottom: 107px;
 	}
