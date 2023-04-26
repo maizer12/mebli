@@ -135,36 +135,39 @@
 					</section>
 					<section class="payment-order">
 						<h3 class="payment-order__title">Попередній перегляд замовлення</h3>
-						<ul class="payment-order__items">
-							<li class="order-item">
-								<div class="order-item__images-ibg">
-									<img src="./images/product.jpg" alt="order" class="order-item__img">
-								</div>
-								<div class="order-item__links">
-									<a href="#" class="order-item__link">Комод</a>
-									<a href="#" class="order-item__link order-item__link_blue">Дуб темний, молочний</a>
-									<a href="#" class="order-item__link">Термін доставки 5 днів</a>
-								</div>
-								<div class="order-item__sum">
-									<button class="order-item__btn">+</button>
-									<input type="number" class="order-item__input" value='1'>
-									<button class="order-item__btn">-</button>
-								</div>
-								<div class="order-item__right">
-									<h4 class="order-item__price">234грн</h4>
-									<button class="order-item__remove">
-										<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M12.9531 33.0491L23.0022 23M33.0513 12.9509L23.0003 23M23.0003 23L12.9531 12.9509M23.0022 23L33.0513 33.0491"
-												stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-									</button>
-								</div>
-							</li>
-						</ul>
-						<div class="order__footer">
-							<p class="order__text text-item">Общо:</p>
-							<p class="order__text text-item">423грн</p>
+						<div class="order__inner">
+							<ul class="order__items">
+								<li class="order-item">
+									<div class="order-item__images-ibg">
+										<img src="./images/product.jpg" alt="order" class="order-item__img">
+									</div>
+									<div class="order-item__links">
+										<h4 class="order-item__name">Назва товару</h4>
+										<a href="#" class="order-item__link">Комод</a>
+										<a href="#" class="order-item__link order-item__link_blue">Дуб темний, молочний</a>
+									</div>
+									<div class="order-item__sum">
+										<button class="order-item__btn">+</button>
+										<input type="number" class="order-item__input" value='1'>
+										<button class="order-item__btn">-</button>
+									</div>
+									<p class="order-item__delivery">Доставка: 5 днів</p>
+									<div class="order-item__right">
+										<h4 class="order-item__price">234грн</h4>
+										<button class="order-item__remove">
+											<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12.9531 33.0491L23.0022 23M33.0513 12.9509L23.0003 23M23.0003 23L12.9531 12.9509M23.0022 23L33.0513 33.0491"
+													stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+								</li>
+							</ul>
+							<div class="order__footer">
+								<p class="order__text text-item">Загалом:</p>
+								<p class="order__text-price text-item">423грн</p>
+							</div>
 						</div>
 						<textarea class='payment-order__text-area' placeholder="Напишіть повідомлення до заказу"></textarea>
 						<label class="payment-order__label">
